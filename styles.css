@@ -1,23 +1,96 @@
 * {
     box-sizing: border-box;
-    color: hsl(224, 21%, 14%);
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+    color: hsl(219, 12%, 42%);
 }
 
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header > div{
+    margin: auto 0;
+    font-size: .9em;
+}
+
+.main-title{
+    font-weight: 800;
+    color: hsl(224, 21%, 14%);
+}
+
+.n-message-name{
+    font-weight: 700;
+    color: hsl(224, 21%, 14%);
+}
+
+.unread-msg:after{
+    content: '\2022';
+    color: hsl(1, 90%, 64%); 
+    font-size: 1.4em;            
+}
+
+.notification{
+    border-radius: 7px;
+    line-height: .98;
+    font-size: .91rem;
+}
+
+.notification.unread{
+    background-color: hsl(211, 68%, 94%);
+}
+
+.msg-count-icon{
+    padding: 1px 9px;
+    background: hsl(219, 85%, 26%);
+    margin-left: 8px;
+    color: #fff;
+    font-size: .8em;
+    margin-bottom: 2px;
+    border-radius: 4px;
+}
+
+
 @media screen and (min-width: 375px) and (max-width: 500px) {
-    h2, .notification {
+    body{
+        padding: 3px;
+    }
+
+    
+    .main-title, .notification {
         display: flex;
         max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .notification{
+        padding: 4.2%;
+        margin-bottom: 10px;
+    }
+
+    .notification div{
+        display: inline;
+    }
+
+    .notification > span{
+        margin-left: 15%;
+    }
+
+    .n-message-text{
+        width: 75%;
+    }
+
+    .pic-comment{
+        width: 60%;
+    }
+
+    .comment-pic{
+        display: inline;
+        margin-left: auto;
     }
 
     .notification-avatar{
         margin-right: 14px;
-    }
-
-    .notification-avatar img{
-        width: 44px;
     }
 
 }
