@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    color: hsl(224, 21%, 14%);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 500px) {
+    h2, .notification {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .notification-avatar{
+        margin-right: 14px;
+    }
+
+    .notification-avatar img{
+        width: 44px;
+    }
+
+}
