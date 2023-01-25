@@ -4,6 +4,20 @@
     color: hsl(219, 12%, 42%);
 }
 
+body{
+    padding: 3px;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+a:active,
+a:hover{
+    color: hsl(219, 85%, 26%);
+    font-weight:bolder;
+}
+
 .main-header{
     display: flex;
     justify-content: space-between;
@@ -24,7 +38,7 @@
     color: hsl(224, 21%, 14%);
 }
 
-.unread-msg:after{
+.unread-msg::after{
     content: '\2022';
     color: hsl(1, 90%, 64%); 
     font-size: 1.4em;            
@@ -32,12 +46,12 @@
 
 .notification{
     border-radius: 7px;
-    line-height: .98;
+    line-height: 1;
     font-size: .91rem;
 }
 
 .notification.unread{
-    background-color: hsl(211, 68%, 94%);
+    background-color: hsl(210, 60%, 98%);
 }
 
 .msg-count-icon{
@@ -50,47 +64,89 @@
     border-radius: 4px;
 }
 
+.msg-time{
+    margin: 6px 0 0 0;
+    color: hsl(219, 14%, 63%);
+}
 
-@media screen and (min-width: 375px) and (max-width: 500px) {
-    body{
-        padding: 3px;
-    }
+.text-link{
+    font-weight: 800;
+    color: hsl(219, 85%, 26%);
+}
 
-    
-    .main-title, .notification {
-        display: flex;
-        max-width: 100%;
-        flex-wrap: wrap;
-    }
+.msg-link{
+    font-weight: 800;
+}
 
-    .notification{
-        padding: 4.2%;
-        margin-bottom: 10px;
-    }
+.pm-msg-preview{
+    border: hsl(219, 14%, 63%) 0.5px solid;
+    border-radius: 4px;
+    padding: 17px 14px;
+    margin-top: 8px;
+    line-height: normal;
+}
+
+.pm-msg-preview:hover,
+.pm-msg-preview:active {
+    background-color:hsl(211, 68%, 94%);
+    border-color: hsl(211, 68%, 94%);
+}
+
+.commented-pic > img:hover,
+.commented-pic > img:active{
+    border: hsl(211, 68%, 94%) 2px solid;
+}
+
+.notification{
+    padding: 8px 15px;
+    margin-bottom: 10px;
+}
+
+.main-title, .notification {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.notification-avatar{
+    display: inline;
+}
+
+.message-content{
+    display: inline;
+    max-width: 90%;
+}
+
+.notification-avatar{
+    margin-right: 14px;
+}
+
+.pic-comment-text{
+    display:inline;
+}
+
+.commented-pic{
+    display: inline;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 360px) and (max-width: 500px) {
 
     .notification div{
         display: inline;
-    }
-
-    .notification > span{
-        margin-left: 15%;
     }
 
     .n-message-text{
         width: 75%;
     }
 
-    .pic-comment{
-        width: 60%;
-    }
-
-    .commented-pic{
+    .message-content{
         display: inline;
-        margin-left: auto;
+        width: 80%;
     }
 
-    .notification-avatar{
-        margin-right: 14px;
+    .pic-comment{
+        width: 65%;
     }
 
 }
