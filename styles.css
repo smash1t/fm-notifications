@@ -44,6 +44,11 @@ a:hover{
     font-size: 1.4em;            
 }
 
+.read-msg::after{
+    content: ' ';
+    font-size: 1.4em;            
+}
+
 .notification{
     border-radius: 7px;
     line-height: 1;
