@@ -6,7 +6,6 @@ var ready = (callback) => {
 }
 
 
-console.log("here");
 ready(() => { 
 /* Do things after DOM has fully loaded */ 
     
@@ -22,8 +21,6 @@ ready(() => {
 
             let unreadMsgText = document.querySelectorAll(".unread-msg");
             unreadMsgText.forEach(elem => { elem.classList.replace("unread-msg","read-msg")});
-
-            console.log(unreadMsgs);
 
             unreadCount.innerText = "0";
 
