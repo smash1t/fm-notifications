@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/2023-01-26 22_02_18-Frontend Mentor _ Notifications page.png)
+![](./assets/images/notifications-screenshot.png)
 
 ### Links
 
