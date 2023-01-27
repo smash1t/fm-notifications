@@ -90,11 +90,14 @@ a:hover{
 .pm-msg-preview:active {
     background-color:hsl(211, 68%, 94%);
     border-color: hsl(211, 68%, 94%);
+    cursor: pointer;
 }
 
 .commented-pic > img:hover,
 .commented-pic > img:active{
-    border: hsl(211, 68%, 94%) 2px solid;
+    border: hsl(211, 68%, 94%) 3px solid;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .notification{
